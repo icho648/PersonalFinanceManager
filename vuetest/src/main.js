@@ -6,8 +6,16 @@ import './plugins/element.js'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import echarts from 'echarts'
+import axios from 'axios'
+Vue.prototype.$echarts = echarts
+Vue.prototype.$axios =axios
+
+
 
 Vue.config.productionTip = false
+
+// axios.defaults.baseURL = '/api'
 
 new Vue({
   router,
